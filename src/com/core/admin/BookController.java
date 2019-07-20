@@ -23,7 +23,8 @@ import java.util.Map;
 public class BookController {
     @Resource
     private BookService bookService;
-    private static final long serialVersionUID = 1L;
+    @SuppressWarnings("unused")
+	private static final long serialVersionUID = 1L;
     private static final Logger log = Logger.getLogger(BookController.class);// 日志文件
 
     @RequestMapping("/listAll")

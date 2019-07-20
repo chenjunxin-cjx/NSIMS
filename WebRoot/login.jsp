@@ -143,8 +143,10 @@
 </form>
 </body>
 </html>
+<!--  
 <script type=text/javascript>
     if ('${errorMsg}' != '') {
         alert('${errorMsg}');
     }
+    -->
 </script>

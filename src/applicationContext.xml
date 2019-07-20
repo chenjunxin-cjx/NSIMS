@@ -19,10 +19,10 @@
           class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url"
-                  value="jdbc:mysql://xx.xx.xx.xx:xx/db"/>
+                  value="jdbc:mysql://www.olocat.cn/NSIMS"/>
         <!-- 改为你的地址即可 -->
-        <property name="username" value="xxxx"/>
-        <property name="password" value="xxxx"/>
+        <property name="username" value="NSIMS"/>
+        <property name="password" value="nsimsdatabase"/>
     </bean>
 
 

@@ -74,11 +74,144 @@
         }
     </script>
 </head>
+<style>
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#login {
+	height: 100vh;
+	background: linear-gradient(#f2f9fd, #b0dcec);
+	position: relative;
+}
+
+.login-bg {
+	width: -webkit-fill-available;
+	width: -moz-fill-available;
+	width: -moz-available; /* FireFox目前这个生效 */
+	position: absolute;
+	bottom: 0;
+	width: fill-available;
+	height: 428px;
+	background: url("./images/login-bg.png") no-repeat;
+	background-size: cover;
+}
+
+.login-box {
+	position: fixed;
+	top: 10%;
+	left: 0px;
+	right: 0px;
+	z-index: 999;
+	width: 620px;
+	margin: 0 auto 0;
+}
+
+.login-box .login-title {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.login-title span {
+	font-size: 36px;
+	color: #2b96e2;
+	letter-spacing: 0;
+	line-height: 32px;
+}
+
+.login-main {
+	width: 460px;
+	padding: 0 80px;
+	height: 460px;
+	background: #ffffff;
+	box-shadow: 0 15px 30px 0 rgba(111, 169, 228, 0.33);
+	border-radius: 10px;
+	text-align: center;
+}
+
+.login-main .title {
+	font-size: 24px;
+	color: #303030;
+	letter-spacing: 0;
+	line-height: 24px;
+	padding: 50px 0;
+}
+
+.login-main input {
+	margin-bottom: 30px;
+	width: 460px;
+	height: 64px;
+	border-radius: 6px;
+	padding: 10px;
+	box-sizing: border-box;
+	font-size: 16px;
+	border: 1px solid #999;
+	outline: none;
+}
+
+.login-main .button {
+	height: 54px;
+	color: #fff;
+	background-color: #3f8fc8;
+	border: none;
+	cursor: pointer;
+}
+
+.help {
+	display: inline-flex;
+	justify-content: space-between;
+	width: 460px;
+}
+
+.help a {
+	font-size: 18px;
+	cursor: pointer;
+	line-height: 18px;
+	text-decoration: none;
+}
+
+.help a:hover {
+	text-decoration: underline;
+}
+
+.help  .help-l {
+	color: #7a7f85;
+}
+
+.help  .help-r {
+	color: #7a7f85;
+}
+</style>
 <body>
+	<div id="login">
+		<div class="login-bg"></div>
+		<div class="login-box">
+			<div class="login-title">
+				<span>护士站信息管理系统</span>
+			</div>
+			<div class="login-main">
+				<p class="title">登录</p>
+				<form name=adminlogin id=adminlogin action="${pageContext.request.contextPath}/user/login.do" method="post">
+					<input type="text" class=input placeholder="请输入用户名" value="${user.userName }" name="userName" id="userName" />
+					</br>
+					<input type="password" placeholder="请输入密码" class=input value="${user.password }" name="password" id="password" />
+					</br>
+					<input type="submit" class="button" value="登录">
+				</form>
+				<p class="help">
+					<!-- <a href="reset_password.jsp" class="help-l">忘记密码</span> 
+					<a href="register.jsp" class="help-r">注册</span> -->
+				</p>
+			</div>
+		</div>
+</body>
+
+<%-- <body>
 <form id=adminlogin method=post
       name=adminlogin action="${pageContext.request.contextPath}/user/login.do">
     <div></div>
-    <table style="margin: auto; width: 100%; height: 100%" border=0
+    <table style="margin: auto; width: 100%; height: 100%" border=1
            cellSpacing=0 cellPadding=0>
         <tbody>
         <tr>
@@ -88,7 +221,7 @@
             <td>
                 <div style="margin: 0px auto; width: 936px"><img
                         style="display: block" src="${pageContext.request.contextPath}/images/body_03.jpg"></div>
-                <div style="background-color: #278296">
+                <div style="background-color: #278296"> 
                     <div style="margin: 0px auto; width: 936px">
                         <div
                                 style="BACKGROUND: url(${pageContext.request.contextPath}/images/body_05.jpg) no-repeat; height: 155px">
@@ -141,7 +274,7 @@
         </tbody>
     </table>
 </form>
-</body>
+</body> --%>
 </html>
 <!--  
 <script type=text/javascript>

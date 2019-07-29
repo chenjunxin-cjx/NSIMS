@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
          pageEncoding="utf-8" %>
+<%
+    if (session.getAttribute("currentUser") == null) {
+        out.println("<script>alert('未登录或登录超时，请先登录！');window.location.href='login.jsp';</script>");
+    }
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>

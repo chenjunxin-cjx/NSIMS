@@ -203,6 +203,32 @@
 					<input type="password" placeholder="请输入密码" class=input value="${user.password }" name="password" id="password" />
 					</br>
 					<input type="submit" class="button" value="登录">
+<<<<<<< HEAD
+					
+				</form>
+				
+				<p class="help">
+					<!-- <a href="reset_password.jsp" class="help-l">忘记密码</span> 
+					<a href="register.jsp" class="help-r">注册</span> -->
+				</p>
+			</div>
+		</div>
+	<div id="login">
+		<div class="login-bg"></div>
+		<div class="login-box">
+			<div class="login-title">
+				<span>护士站信息管理系统</span>
+			</div>
+			<div class="login-main">
+				<p class="title">登录</p>
+				<form name=adminlogin id=adminlogin action="${pageContext.request.contextPath}/user/login.do" method="post">
+					<input type="text" class=input placeholder="请输入用户名" value="${user.userName }" name="userName" id="userName" />
+					</br>
+					<input type="password" placeholder="请输入密码" class=input value="${user.password }" name="password" id="password" />
+					</br>
+					<input type="submit" class="button" value="登录">
+=======
+>>>>>>> branch 'master' of https://github.com/chenjunxin-cjx/NSIMS.git
 				</form>
 				<p class="help">
 					<!-- <a href="reset_password.jsp" class="help-l">忘记密码</span> 

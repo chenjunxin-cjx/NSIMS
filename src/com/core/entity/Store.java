@@ -22,7 +22,7 @@ public class Store implements Serializable {
     private String level;// 书架层数
     private String page;// 目前书架上书本的总页数，阀值固定
     private int status;// 该书架状态，是否已满
-    private String name;
+    private String name; //姓名
     private List<Book> books;
 
     @Override

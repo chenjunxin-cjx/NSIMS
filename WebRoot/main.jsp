@@ -129,6 +129,14 @@
                     data-options="plain:true,iconCls:'icon-shujia'"
                     style="width: 150px;"> 书架管理</a>
         </div>
+        <div title="书架管理" data-options="iconCls:'icon-shujias'"
+             style="padding:10px">
+            <a
+                    href="javascript:openTab(' 书架管理','storeManage2.jsp','icon-shujia')"
+                    class="easyui-linkbutton"
+                    data-options="plain:true,iconCls:'icon-shujia'"
+                    style="width: 150px;"> 书架管理</a>
+        </div>
         <div title="书籍管理" data-options="iconCls:'icon-shuji'"
              style="padding:10px">
             <a

@@ -1,3 +1,4 @@
 alter table ssm_store add varchar(10) name;
-##ÔÚssm_store ¼ÓÁËÒ»¸önameµÄ×Ö¶Î
-##ÔÚssm_store name×Ö¶ÎÉÏ¼ÓÁËÒ»¸öÊı¾İ
+
+##åœ¨ssm_store åŠ äº†ä¸€ä¸ªnameçš„å­—æ®µ
+##åœ¨ssm_store nameå­—æ®µä¸ŠåŠ äº†ä¸€ä¸ªæ•°æ®

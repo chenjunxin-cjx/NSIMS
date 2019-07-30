@@ -227,8 +227,6 @@
 					<input type="password" placeholder="请输入密码" class=input value="${user.password }" name="password" id="password" />
 					</br>
 					<input type="submit" class="button" value="登录">
-=======
->>>>>>> branch 'master' of https://github.com/chenjunxin-cjx/NSIMS.git
 				</form>
 				<p class="help">
 					<!-- <a href="reset_password.jsp" class="help-l">忘记密码</span> 

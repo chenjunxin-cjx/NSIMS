@@ -1,6 +1,7 @@
 package com.core.entity;
 
 import java.io.Serializable;
+import java.sql.Date;
 import java.util.List;
 
 /**
@@ -23,13 +24,22 @@ public class Store implements Serializable {
     private String page;// 目前书架上书本的总页数，阀值固定
     private int status;// 该书架状态，是否已满
     private String name; //姓名
+    private String sex;//性别
+    private Date  csny; //出生年月
+    
+
+	
     private List<Book> books;
 
+   
     @Override
-    public String toString() {
-        return "Store [id=" + id + ", category=" + category + ", page=" + page
-                + ", status=" + status + ", books=" + books + "]";
-    }
+	public String toString() {
+		return "Store [id=" + id + ", category=" + category + ", number=" + number + ", level=" + level + ", page="
+				+ page + ", status=" + status + ", name=" + name + ", sex=" + sex + ", csny=" + csny + ", books="
+				+ books + "]";
+	}
+
+	
 
     public String getId() {
         return id;
@@ -93,6 +103,21 @@ public class Store implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
+	public Date getCsny() {
+		return csny;
+	}
+
+	public void setCsny(Date csny) {
+		this.csny = csny;
 	}
     
 

@@ -164,8 +164,8 @@
         <th field="cb" checkbox="true" align="center"></th>
         <th field="id" width="10%" align="center" hidden="true">编号</th>
         <th field="name" width="80" align="center">护士姓名</th>
-        <th field="sex" width="80" align="center">护士性别</th>
-        <th field="csrq" width="80" align="center">出生年月</th>
+        <th field="sex" width="80" align="center">性别</th>
+        <th field="csny" width="80" align="center">出生年月</th>
         <th field="number" width="80" align="center">护士编号</th>
         <th field="level" width="50" align="center" formatter="Level">层数</th>
         <th field="page" width="80" align="center">总页码</th>
@@ -189,7 +189,7 @@
             iconCls="icon-remove" plain="true">删除</a> -->
     </div>
     <div>
-        &nbsp;护士编号：&nbsp;<input type="text" id="number" size="20"
+        &nbsp;护士编号：&nbsp;<input type="text" id="number" size="20" 
                                 onkeydown="if(event.keyCode==13) searchStore()"/>&nbsp; <a
             href="javascript:searchStore()" class="easyui-linkbutton"
             iconCls="icon-search" plain="true">搜索</a>

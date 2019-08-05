@@ -96,14 +96,14 @@
     </script>
     <jsp:include page="login_chk.jsp"></jsp:include>
 <body class="easyui-layout">
-<div region="north" style="height: 78px;background-color: #ffff">
+<div region="north" style="height: 78px; background-color: #ffff">
     <table width="100%">
         <tr>
             <td width="50%"></td>
             <td valign="bottom"
                 style="font-size: 20px;color:#8B8B8B;font-family: '楷体';"
-                align="right" width="50%"><font size="3">&nbsp;&nbsp;<strong>当前管理员：</strong>${currentUser.userName
-                    }</font>【管理员】
+                align="right" width="50%"><font size="3">&nbsp;&nbsp;<strong>
+                当前管理员：</strong>${currentUser.userName }</font>【管理员】
             </td>
         </tr>
     </table>
@@ -111,8 +111,8 @@
 <div region="center">
     <div class="easyui-tabs" fit="true" border="false" id="tabs">
         <div title="首页" data-options="iconCls:'icon-home'">
-            <div align="center" style="padding-top: 100px">
-                <font color="grey" size="10">ssm demo</font>
+            <div align="center" style="padding-top: 600px;background-image: url('images/sybj.jpg');">
+               
             </div>
         </div>
     </div>
@@ -129,13 +129,13 @@
                     data-options="plain:true,iconCls:'icon-shujia'"
                     style="width: 150px;"> 书架管理</a>
         </div>
-        <div title="书架管理" data-options="iconCls:'icon-shujias'"
+        <div title="护士管理" data-options="iconCls:'icon-shujias'"
              style="padding:10px">
             <a
-                    href="javascript:openTab(' 书架管理','storeManage2.jsp','icon-shujia')"
+                    href="javascript:openTab(' 护士管理','storeManage2.jsp','icon-shujia')"
                     class="easyui-linkbutton"
                     data-options="plain:true,iconCls:'icon-shujia'"
-                    style="width: 150px;"> 书架管理</a>
+                    style="width: 150px;"> 护士管理</a>
         </div>
         <div title="书籍管理" data-options="iconCls:'icon-shuji'"
              style="padding:10px">
